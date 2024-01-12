@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>EYEONIC FEEDBACK</title>
+    <title>ORDER</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -43,24 +43,38 @@
         </div>
     </nav>
     <div>
-        <h1 style="text-align: center;color: white;" data-aos="flip-right" data-aos-duration="1500">: FEEDBACK :</h1>
+        <h1 style="text-align: center;color: white;" data-aos="flip-right" data-aos-duration="1500">: Fill in the form below to place your order :</h1>
     </div>
-    <div class="container">
-        <p style="color: white;">We value your feedback. Please share your thoughts with us:</p>
+    <div class="container mt-4">
         <form action="">
             <div class="form-group">
-                <label for="name" style="color: white;">Your Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <label for="name" style="color: white;">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
             </div>
             <div class="form-group">
-                <label for="email" style="color: white;">Your Email</label>
+                <label for="email"style="color: white;">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <label for="feedback" style="color: white;">Feedback</label>
-                <textarea class="form-control" id="feedback" rows="5" placeholder="Enter your feedback" required></textarea>
+                <label for="address"style="color: white;">Shipping Address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Enter your shipping address" required></textarea>
             </div>
-            <button type="submit" class="btn btn-block btn-danger"><a href="./feedback.html"style="color: white;">Submit Feedback</a></button>
+            <div class="form-group">
+                <label for="glassesType"style="color: white;">Select Glasses Type</label>
+                <select class="form-control" id="glassesType">
+                    <option>Glasses for man</option>
+                    <option>Glasses for woman</option>
+                    <option>Glasses for kids</option>
+                    <option>Sunglasses</option>
+                    <option>Reading Glasses</option>
+                    <option>Blue Light Blocking Glasses</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity"style="color: white;">Quantity</label>
+                <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" required>
+            </div>
+            <button type="submit" class="btn btn-block btn-danger"><a href="./Home.html" style="color: white;">Place Order</a></button>
         </form>
     </div>
     <footer class="footer" style="background-color: rgb(61, 60, 60); margin-top: 30px;">
